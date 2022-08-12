@@ -4,7 +4,7 @@ AS = ${TOOLCHAIN}-as
 LD = ${TOOLCHAIN}-ld
 OBJCOPY = ${TOOLCHAIN}-objcopy
 
-OBJS = start.o console.o aux.o gpio.o
+OBJS = start.o console.o aux.o gpio.o rng.o
 
 .s.o:
 	${AS} ${AFLAGS} -o$@ $<
